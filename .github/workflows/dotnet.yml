@@ -16,7 +16,7 @@ jobs:
     steps:
     - name: hello world action step
       id: hello
-      uses: schapmanCE/container-actions-demo@v1
+      uses: schapmanCE/container-action-demo@v1
       with:
         who-to-greet: "billy bob"
     - name: get the output
