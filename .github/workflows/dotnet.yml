@@ -20,4 +20,4 @@ jobs:
       with:
         who-to-greet: "billy bob"
     - name: get the output
-      run: echo "the time was ${{ step.hello.outputs.time }}"
+      run: echo "the time was ${{ steps.hello.outputs.time }}"
