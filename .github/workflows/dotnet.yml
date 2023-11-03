@@ -11,13 +11,13 @@ on:
 
 jobs:
   hello_world_job:
-  runs-on: ubuntu-latest
-  name: a job to say hello
-  steps:
-  - name: hello world action step
-    id: hello
-    uses: schapmanCE/container-actions-demo
-    with:
-      who-to-greet: "billy bob"
-  - name: get the output
-    run: echo "the time was ${{ step.hello.outputs.time }}"
+    runs-on: ubuntu-latest
+    name: a job to say hello
+    steps:
+    - name: hello world action step
+      id: hello
+      uses: schapmanCE/container-actions-demo
+      with:
+        who-to-greet: "billy bob"
+    - name: get the output
+      run: echo "the time was ${{ step.hello.outputs.time }}"
